@@ -6,7 +6,7 @@ import styles from './styles';
 
 import {useNavigation} from '@react-navigation/native';
 
-const Card = () =>{
+const Card = (props) =>{
 
     const navigation = useNavigation();
 
@@ -20,12 +20,13 @@ const Card = () =>{
             <View style={styles.card}>
                 <TouchableOpacity>
                     <Image
-                        source={require('../../../assets/cardImg.jpeg')}
+                        /* source={require('../../../assets/cardImg.jpeg')} */
+                        source={props.img}
                         style={styles.cardImage}
                     />
                     <View style={styles.cardText}>
-                        <Text style={styles.text} >Nike X</Text>
-                        <Text style={styles.textPrice} >R$ 250.00</Text>
+                        <Text style={styles.text} >{props.title}</Text>
+                        <Text style={styles.textPrice} >R$ {props.price}</Text>
                     </View>
                 </TouchableOpacity>
             </View>

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     cardText:{
         backgroundColor:'#F5F5F5',borderBottomRightRadius:11,borderBottomLeftRadius:11,
     },
-    text:{color:'#444242',fontSize:20,padding:2,textAlign:"center"},
+    text:{color:'#444242',fontSize:20,padding:2,textAlign:"center",fontFamily:"Montserrat_400Regular"},
     textPrice:{color:'#7A70F2',fontSize:17,padding:2,textAlign:"center",fontFamily:"Montserrat_500Medium"},
 })
 

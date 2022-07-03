@@ -49,10 +49,10 @@ const Home = () =>{
                     />
 
                     <View style={styles.cardView}>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
+                        <Card title="Nike X" price="200.00" img={require('../../../assets/cardImg.jpeg')}/>
+                        <Card title="Nike Z" price="230.00" img={require('../../../assets/cardImg2.jpeg')}/>
+                        <Card title="Nike W" price="210.00" img={require('../../../assets/cardImg2.jpeg')}/>
+                        <Card title="Nike Y" price="250.00" img={require('../../../assets/cardImg.jpeg')}/>
                     </View>
                 </View>
             </ScrollView>
