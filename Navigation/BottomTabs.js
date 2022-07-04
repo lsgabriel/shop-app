@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 
 export default function ShowBottomTabs(){
     return(
-        <Tab.Navigator screenOptions={{headerShown:false,tabBarShowLabel:false,tabBarStyle:{height:46,backgroundColor:'whitesmoke'}}}>
+        <Tab.Navigator screenOptions={{headerShown:false,unmountOnBlur:true,tabBarShowLabel:false,tabBarStyle:{height:46,backgroundColor:'whitesmoke'}}}>
 
             <Tab.Screen name='HomeTab' component={HomeNavigation}
                     options={{

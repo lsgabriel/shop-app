@@ -33,7 +33,7 @@ const Cart = () => {
                     </View>
 
                     <View style={styles.Btn}>
-                        <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
+                        <TouchableOpacity>
                             <Text style={styles.BtnText}>Finalizar Compra</Text>
                         </TouchableOpacity>
                     </View>

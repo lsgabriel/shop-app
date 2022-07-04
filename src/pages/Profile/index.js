@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 import { useFonts, Montserrat_400Regular, Montserrat_500Medium } from '@expo-google-fonts/montserrat';
 import styles from './styles';
@@ -29,7 +29,9 @@ const Profile = () => {
 
                         <SecondaryMenu title='Configurações' subTitle="Configure o App" iconName="wrench" />
 
-                        <SecondaryMenu title='Sair' subTitle="Sair da sessão atual" iconName="door-closed" />
+                        <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
+                            <SecondaryMenu title='Sair' subTitle="Sair da sessão atual" iconName="door-closed" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
